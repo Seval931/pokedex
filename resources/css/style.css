@@ -1,7 +1,7 @@
 /*general propouse css*/
 @font-face {
   font-family: "Roboto";
-  src: url("/resources/fonts/Roboto-Medium.ttf");
+  src: url("../resources/fonts/Roboto-Medium.ttf");
 }
 
 body {
@@ -89,7 +89,7 @@ main.pokedex section {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-image: url("/resources/img/fire-b.png");
+  background-image: url("../resources/img/fire-b.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 90%;
@@ -155,7 +155,7 @@ header.pokedex h1::before {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-image: url("/resources/img/pokeball.png");
+  background-image: url("../resources/img/pokeball.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% auto;
