@@ -1,0 +1,82 @@
+main {
+  &.pokedex {
+    background-color: $main-color;
+    padding: 1rem;
+    section {
+      width: 100%;
+    }
+    @extend .d-flex;
+    @media (min-width: 481px) {
+      column-gap: 2%;
+      section {
+        width: 48%;
+      }
+    }
+  }
+}
+
+.pokemon-view {
+  z-index: 2;
+  figure {
+    max-width: 481px;
+    margin: auto;
+  }
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: $standard-white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    &::before {
+      content: "";
+      transform: translateY(0.2rem);
+      top: 0;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      background-image: url("/dist/resources/img/fire-b.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 90%;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.pokemon-stats {
+  ul {
+    padding: 5rem 2rem 2rem 2rem;
+    margin-top: -5rem;
+    border-radius: 0.5rem;
+    background-color: $standard-white;
+    li {
+      width: 100%;
+      @extend .d-flex;
+      p {
+        &.stat-title {
+          font-weight: 700;
+        }
+        width: 50%;
+      }
+    }
+    @media (min-width: 481px) {
+      padding: 2rem;
+      margin-top: 0px;
+
+      li {
+        width: 40%;
+        margin-bottom: 1rem;
+        p {
+          width: 100%;
+          text-align: center;
+          margin-top: 0.3rem;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+}

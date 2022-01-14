@@ -1,0 +1,31 @@
+header {
+  &.pokedex {
+    background-color: $standard-black;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    h1 {
+      margin: 0px;
+      &::before {
+        content: "";
+        transform: translateY(0.5rem);
+        top: 0;
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background-image: url("/dist/resources/img/pokeball.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90% auto;
+        margin-right: 0.5rem;
+      }
+      padding-left: 1rem;
+      font-size: 1.5rem;
+      color: $standard-white;
+      text-align: center;
+      @media (min-width: 481px) {
+        text-align: start;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/*general propouse css*/
+@import "color-scheme";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/dist/resources/fonts/Roboto-Medium.ttf");
+}
+
+body {
+  padding: 5% 2%;
+  background-color: $black-A25;
+  font-family: "Roboto";
+}
+
+.image-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.flex-center {
+  @extend .d-flex;
+  justify-content: center;
+}
+.flex-between {
+  @extend .d-flex;
+  justify-content: space-between;
+}
+
+@import "main", "header", "footer";
