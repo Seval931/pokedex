@@ -1,9 +1,14 @@
 /*general propouse css*/
-@import "color-scheme";
+$main-color: #e62918;
+$standard-white: #fff;
+$standard-black: #2f3237;
+$black-A50: rgba($standard-black, 0.5);
+$black-A25: rgba($standard-black, 0.25);
+$black-A10: rgba($standard-black, 0.1);
 
 @font-face {
   font-family: "Roboto";
-  src: url("/dist/resources/fonts/Roboto-Medium.ttf");
+  src: url("/resources/fonts/Roboto-Medium.ttf");
 }
 
 body {

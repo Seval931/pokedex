@@ -1,7 +1,7 @@
 /*general propouse css*/
 @font-face {
   font-family: "Roboto";
-  src: url("/dist/resources/fonts/Roboto-Medium.ttf");
+  src: url("/resources/fonts/Roboto-Medium.ttf");
 }
 
 body {
@@ -89,7 +89,7 @@ main.pokedex section {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-image: url("/dist/resources/img/fire-b.png");
+  background-image: url("/resources/img/fire-b.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 90%;
@@ -155,7 +155,7 @@ header.pokedex h1::before {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-image: url("/dist/resources/img/pokeball.png");
+  background-image: url("/resources/img/pokeball.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% auto;
@@ -194,15 +194,15 @@ footer.pokedex h2 {
     padding-left: 3rem;
   }
   footer.pokedex h2 {
-    width: 40%;
+    width: 30%;
   }
 }
 
 .other-pokemons-list {
-  width: 60%;
+  width: 70%;
   max-width: 500px;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 .other-pokemons-list .other-pokemon-item-1 {
@@ -212,7 +212,7 @@ footer.pokedex h2 {
   border-radius: 0.5rem;
   border: 2px rgba(47, 50, 55, 0.5) solid;
   margin-bottom: 0.5rem;
-  background-image: url("/dist/resources/img/other-pokemon-1.png");
+  background-image: url("../img/other-pokemon-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -234,7 +234,7 @@ footer.pokedex h2 {
   border-radius: 0.5rem;
   border: 2px rgba(47, 50, 55, 0.5) solid;
   margin-bottom: 0.5rem;
-  background-image: url("/dist/resources/img/other-pokemon-2.png");
+  background-image: url("../img/other-pokemon-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -256,7 +256,7 @@ footer.pokedex h2 {
   border-radius: 0.5rem;
   border: 2px rgba(47, 50, 55, 0.5) solid;
   margin-bottom: 0.5rem;
-  background-image: url("/dist/resources/img/other-pokemon-3.png");
+  background-image: url("../img/other-pokemon-3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 70%;
@@ -278,7 +278,7 @@ footer.pokedex h2 {
   border-radius: 0.5rem;
   border: 2px rgba(47, 50, 55, 0.5) solid;
   margin-bottom: 0.5rem;
-  background-image: url("/dist/resources/img/other-pokemon-4.png");
+  background-image: url("../img/other-pokemon-4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 70%;

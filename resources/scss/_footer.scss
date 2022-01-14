@@ -14,16 +14,16 @@ footer {
       padding-right: 3rem;
       padding-left: 3rem;
       h2 {
-        width: 40%;
+        width: 30%;
       }
     }
   }
 }
 
 .other-pokemons-list {
-  width: 60%;
+  width: 70%;
   max-width: 500px;
-  column-gap: 15px;
+  column-gap: 10px;
   @for $i from 1 to 5 {
     .other-pokemon-item-#{$i} {
       width: 80px;
@@ -32,7 +32,7 @@ footer {
       border-radius: 0.5rem;
       border: 2px $black-A50 solid;
       margin-bottom: 0.5rem;
-      background-image: url("./dist/resources/img/other-pokemon-#{$i}.png");
+      background-image: url("../img/other-pokemon-#{$i}.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: auto 70%;
