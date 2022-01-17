@@ -7,6 +7,7 @@ main {
     }
     @extend .d-flex;
     @media (min-width: 481px) {
+      //align-items: stretch;
       column-gap: 2%;
       section {
         width: 48%;
@@ -18,7 +19,7 @@ main {
 .pokemon-view {
   z-index: 2;
   figure {
-    max-width: 481px;
+    max-width: 482px;
     margin: auto;
   }
   h2 {
@@ -48,7 +49,11 @@ main {
 }
 
 .pokemon-stats {
+  align-self: stretch;
   ul {
+    max-width: 500px;
+    margin: auto;
+    height: 90%;
     padding: 5rem 2rem 2rem 2rem;
     margin-top: -5rem;
     border-radius: 0.5rem;
@@ -64,17 +69,33 @@ main {
       }
     }
     @media (min-width: 481px) {
-      padding: 2rem;
+      padding: 1rem;
       margin-top: 0px;
-
       li {
         width: 40%;
         margin-bottom: 1rem;
+
         p {
+          &.stat-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+          }
+          font-size: 1rem;
+          font-weight: 300;
           width: 100%;
           text-align: center;
           margin-top: 0.3rem;
           margin-bottom: 0.3rem;
+        }
+      }
+    }
+    @media (min-width: 720px) {
+      li {
+        p {
+          &.stat-title {
+            font-size: 1.8rem;
+          }
+          font-size: 1.3rem;
         }
       }
     }

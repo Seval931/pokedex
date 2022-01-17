@@ -12,9 +12,11 @@ $black-A10: rgba($standard-black, 0.1);
 }
 
 body {
-  padding: 5% 2%;
+  padding: 2% 2% 1% 2%;
   background-color: $black-A25;
   font-family: "Roboto";
+  max-width: 1400px;
+  margin: auto;
 }
 
 .image-fluid {

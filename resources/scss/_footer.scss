@@ -11,10 +11,10 @@ footer {
     }
     @media (min-width: 481px) {
       flex-direction: row;
-      padding-right: 3rem;
-      padding-left: 3rem;
+      padding: 2rem;
       h2 {
         width: 30%;
+        font-size: 1.8rem;
       }
     }
   }
@@ -26,8 +26,12 @@ footer {
   column-gap: 10px;
   @for $i from 1 to 5 {
     .other-pokemon-item-#{$i} {
-      width: 80px;
-      height: 80px;
+      width: 50vw;
+      height: 50vw;
+      min-width: 80px;
+      min-height: 80px;
+      max-width: 100px;
+      max-height: 100px;
       background-color: $standard-white;
       border-radius: 0.5rem;
       border: 2px $black-A50 solid;
@@ -35,7 +39,8 @@ footer {
       background-image: url("../img/other-pokemon-#{$i}.png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: auto 70%;
+      background-size: auto 80%;
+
       &:hover {
         transform: scale(1.15);
         background-color: $black-A10;
