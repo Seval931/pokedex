@@ -1,5 +1,5 @@
 main {
-  &.pokedex {
+  &.pokemon-description {
     background-color: $main-color;
     padding: 1rem;
     section {
@@ -16,7 +16,7 @@ main {
   }
 }
 
-.pokemon-view {
+.pokemon-description__show-pokemon {
   z-index: 2;
   figure {
     max-width: 482px;
@@ -48,9 +48,9 @@ main {
   }
 }
 
-.pokemon-stats {
+.pokemon-description__pokemon-stats {
   align-self: stretch;
-  ul {
+  .pokemon-description__pokemon-stats__list {
     max-width: 500px;
     margin: auto;
     height: 90%;
@@ -58,44 +58,47 @@ main {
     margin-top: -5rem;
     border-radius: 0.5rem;
     background-color: $standard-white;
-    li {
+    .pokemon-description__pokemon-stats__list-element {
       width: 100%;
-      @extend .d-flex;
-      p {
-        &.stat-title {
-          font-weight: 700;
-        }
+      @extend .d-flex;    
+      *{
         width: 50%;
+      }
+      .pokemon-stats__list-element-title {
+        font-weight: 700;
       }
     }
     @media (min-width: 481px) {
       padding: 1rem;
       margin-top: 0px;
-      li {
+      .pokemon-description__pokemon-stats__list-element {
         width: 40%;
         margin-bottom: 1rem;
-
-        p {
-          &.stat-title {
-            font-weight: 700;
-            font-size: 1.1rem;
-          }
-          font-size: 1rem;
-          font-weight: 300;
+        *{
+          width: 50%;
           width: 100%;
           text-align: center;
           margin-top: 0.3rem;
           margin-bottom: 0.3rem;
         }
+        p {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+
+        .pokemon-stats__list-element-title {
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
       }
     }
     @media (min-width: 720px) {
-      li {
+      .pokemon-description__pokemon-stats__list-element {
         p {
-          &.stat-title {
-            font-size: 1.8rem;
-          }
           font-size: 1.3rem;
+        }
+        .pokemon-stats__list-element-title {
+          font-size: 1.8rem;
         }
       }
     }

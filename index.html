@@ -1,59 +1,67 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/style.css"/>
+    <link rel="stylesheet" href="./resources/css/style.css" />
 </head>
 
 <body>
-    <header class="pokedex">
-        <h1><span class="icon-pokedex"></span>Pokedex</h1>
+    <header class="pokedex-header">
+        <h1>Pokedex</h1>
     </header>
-    <main class="pokedex">
-        <section class="pokemon-view">
-            <!-- esto se podria generalizar para que cambie nombre -->
-            <h2><span class="pokemon-type"></span>ARCANINE</h2>
+    <main class="pokemon-description">
+        <section class="pokemon-description__show-pokemon">
+            <h2>ARCANINE</h2>
             <figure>
                 <img class="image-fluid" src="./resources/img/arcanine.png" alt="arcanine">
             </figure>
         </section>
-        <section class="pokemon-stats">
-            <ul class="flex-between">
-                <li>
-                    <p class="stat-title">NO.</p>
+        <section class="pokemon-description__pokemon-stats">
+            <ul class="pokemon-description__pokemon-stats__list flex-between">
+                <li class="pokemon-description__pokemon-stats__list-element">
+                    <h3 class="pokemon-stats__list-element-title">NO.</h3>
                     <p>059</p>
                 </li>
-                <li>
-                    <p class="stat-title">LEVEL</p>
+                <li class="pokemon-description__pokemon-stats__list-element">
+                    <h3 class="pokemon-stats__list-element-title">LEVEL</h3>
                     <p>100</p>
                 </li>
-                <li>
-                    <p class="stat-title">TYPE</p>
+                <li class="pokemon-description__pokemon-stats__list-element">
+                    <h3 class="pokemon-stats__list-element-title">TYPE</h3>
                     <p>FIRE</p>
                 </li>
-                <li>
-                    <p class="stat-title">HABILITY</p>
+                <li class="pokemon-description__pokemon-stats__list-element">
+                    <h3 class="pokemon-stats__list-element-title">HABILITY</h3>
                     <p>INTIMIDATE</p>
                 </li>
-                <li>
-                    <p class="stat-title">HEIGHT</p>
+                <li class="pokemon-description__pokemon-stats__list-element">
+                    <h3 class="pokemon-stats__list-element-title">HEIGHT</h3>
                     <p>1.9m</p>
                 </li>
-                <li>
-                    <p class="stat-title">WEIGHT</p>
+                <li class="pokemon-description__pokemon-stats__list-element">
+                    <h3 class="pokemon-stats__list-element-title">WEIGHT</h3>
                     <p>155.0 kg</p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer class="pokedex flex-center">
+    <footer class="other-pokemon flex-center">
         <h2>OTHERS</h2>
-        <div class="other-pokemons-list flex-center">
-            <button class="other-pokemon-item-1"></button>
-            <button class="other-pokemon-item-2"></button>
-            <button class="other-pokemon-item-3"></button>
-            <button class="other-pokemon-item-4"></button>
-        </div>
+        <section class="other-pokemons-list flex-center">
+            <button class="other-pokemon-item">
+                <img src="./resources/img/other-pokemon-1.png" alt="umbreon" />
+            </button>
+            <button class="other-pokemon-item">
+                <img src="./resources/img/other-pokemon-2.png" alt="flygon" />
+            </button>
+            <button class="other-pokemon-item">
+                <img src="./resources/img/other-pokemon-3.png" alt="scolipede" />
+            </button>
+            <button class="other-pokemon-item">
+                <img src="./resources/img/other-pokemon-4.png" alt="kabutops" />
+            </button>
+        </section>
     </footer>
 </body>

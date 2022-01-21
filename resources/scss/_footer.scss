@@ -1,5 +1,5 @@
 footer {
-  &.pokedex {
+  &.other-pokemon {
     background-color: $standard-white;
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     padding: 1rem;
@@ -24,29 +24,31 @@ footer {
   width: 70%;
   max-width: 500px;
   column-gap: 10px;
-  @for $i from 1 to 5 {
-    .other-pokemon-item-#{$i} {
-      width: 50vw;
-      height: 50vw;
-      min-width: 80px;
-      min-height: 80px;
-      max-width: 100px;
-      max-height: 100px;
-      background-color: $standard-white;
-      border-radius: 0.5rem;
-      border: 2px $black-A50 solid;
-      margin-bottom: 0.5rem;
-      background-image: url("../img/other-pokemon-#{$i}.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: auto 80%;
-
-      &:hover {
-        transform: scale(1.15);
-        background-color: $black-A10;
-        border-color: $main-color;
-        transition: all 0.5s;
-      }
+  .other-pokemon-item{
+    width: 50vw;
+    height: 50vw;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: $standard-white;
+    border-radius: 0.5rem;
+    border: 2px $black-A50 solid;
+    margin-bottom: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    img{
+      width: 75%;
+      align-self: center;
     }
+    
+    &:hover {
+      transform: scale(1.15);
+      background-color: $black-A10;
+      border-color: $main-color;
+      transition: all 0.5s;
+    }
+    
   }
 }

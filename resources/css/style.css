@@ -17,7 +17,7 @@ body {
   height: auto;
 }
 
-.d-flex, .flex-center, .flex-between, main.pokedex, .pokemon-stats ul li {
+.d-flex, .flex-center, .flex-between, main.pokemon-description, .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,35 +43,35 @@ body {
           justify-content: space-between;
 }
 
-main.pokedex {
+main.pokemon-description {
   background-color: #e62918;
   padding: 1rem;
 }
 
-main.pokedex section {
+main.pokemon-description section {
   width: 100%;
 }
 
 @media (min-width: 481px) {
-  main.pokedex {
+  main.pokemon-description {
     -webkit-column-gap: 2%;
             column-gap: 2%;
   }
-  main.pokedex section {
+  main.pokemon-description section {
     width: 48%;
   }
 }
 
-.pokemon-view {
+.pokemon-description__show-pokemon {
   z-index: 2;
 }
 
-.pokemon-view figure {
+.pokemon-description__show-pokemon figure {
   max-width: 482px;
   margin: auto;
 }
 
-.pokemon-view h2 {
+.pokemon-description__show-pokemon h2 {
   font-size: 1.7rem;
   font-weight: 400;
   max-width: 600px;
@@ -83,7 +83,7 @@ main.pokedex section {
   border-radius: 0.5rem;
 }
 
-.pokemon-view h2::before {
+.pokemon-description__show-pokemon h2::before {
   content: "";
   -webkit-transform: translateY(0.2rem);
           transform: translateY(0.2rem);
@@ -98,13 +98,13 @@ main.pokedex section {
   margin-right: 0.5rem;
 }
 
-.pokemon-stats {
+.pokemon-description__pokemon-stats {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
 }
 
-.pokemon-stats ul {
+.pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list {
   max-width: 500px;
   margin: auto;
   height: 90%;
@@ -114,58 +114,61 @@ main.pokedex section {
   background-color: #fff;
 }
 
-.pokemon-stats ul li {
+.pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element {
   width: 100%;
 }
 
-.pokemon-stats ul li p {
+.pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element * {
   width: 50%;
 }
 
-.pokemon-stats ul li p.stat-title {
+.pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element .pokemon-stats__list-element-title {
   font-weight: 700;
 }
 
 @media (min-width: 481px) {
-  .pokemon-stats ul {
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list {
     padding: 1rem;
     margin-top: 0px;
   }
-  .pokemon-stats ul li {
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element {
     width: 40%;
     margin-bottom: 1rem;
   }
-  .pokemon-stats ul li p {
-    font-size: 1rem;
-    font-weight: 300;
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element * {
+    width: 50%;
     width: 100%;
     text-align: center;
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
   }
-  .pokemon-stats ul li p.stat-title {
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element .pokemon-stats__list-element-title {
     font-weight: 700;
     font-size: 1.1rem;
   }
 }
 
 @media (min-width: 720px) {
-  .pokemon-stats ul li p {
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element p {
     font-size: 1.3rem;
   }
-  .pokemon-stats ul li p.stat-title {
+  .pokemon-description__pokemon-stats .pokemon-description__pokemon-stats__list .pokemon-description__pokemon-stats__list-element .pokemon-stats__list-element-title {
     font-size: 1.8rem;
   }
 }
 
-header.pokedex {
+header.pokedex-header {
   background-color: #2f3237;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
 
-header.pokedex h1 {
+header.pokedex-header h1 {
   margin: 0px;
   padding-left: 1rem;
   font-size: 1.5rem;
@@ -173,7 +176,7 @@ header.pokedex h1 {
   text-align: center;
 }
 
-header.pokedex h1::before {
+header.pokedex-header h1::before {
   content: "";
   -webkit-transform: translateY(0.5rem);
           transform: translateY(0.5rem);
@@ -189,12 +192,12 @@ header.pokedex h1::before {
 }
 
 @media (min-width: 481px) {
-  header.pokedex h1 {
+  header.pokedex-header h1 {
     text-align: start;
   }
 }
 
-footer.pokedex {
+footer.other-pokemon {
   background-color: #fff;
   border-radius: 0rem 0rem 0.5rem 0.5rem;
   padding: 1rem;
@@ -204,21 +207,21 @@ footer.pokedex {
           flex-direction: column;
 }
 
-footer.pokedex h2 {
+footer.other-pokemon h2 {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
 }
 
 @media (min-width: 481px) {
-  footer.pokedex {
+  footer.other-pokemon {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 2rem;
   }
-  footer.pokedex h2 {
+  footer.other-pokemon h2 {
     width: 30%;
     font-size: 1.8rem;
   }
@@ -231,7 +234,7 @@ footer.pokedex h2 {
           column-gap: 10px;
 }
 
-.other-pokemons-list .other-pokemon-item-1 {
+.other-pokemons-list .other-pokemon-item {
   width: 50vw;
   height: 50vw;
   min-width: 80px;
@@ -242,91 +245,19 @@ footer.pokedex h2 {
   border-radius: 0.5rem;
   border: 2px rgba(47, 50, 55, 0.5) solid;
   margin-bottom: 0.5rem;
-  background-image: url("../img/other-pokemon-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 80%;
 }
 
-.other-pokemons-list .other-pokemon-item-1:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: rgba(47, 50, 55, 0.1);
-  border-color: #e62918;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+.other-pokemons-list .other-pokemon-item img {
+  width: 75%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.other-pokemons-list .other-pokemon-item-2 {
-  width: 50vw;
-  height: 50vw;
-  min-width: 80px;
-  min-height: 80px;
-  max-width: 100px;
-  max-height: 100px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  border: 2px rgba(47, 50, 55, 0.5) solid;
-  margin-bottom: 0.5rem;
-  background-image: url("../img/other-pokemon-2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 80%;
-}
-
-.other-pokemons-list .other-pokemon-item-2:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: rgba(47, 50, 55, 0.1);
-  border-color: #e62918;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.other-pokemons-list .other-pokemon-item-3 {
-  width: 50vw;
-  height: 50vw;
-  min-width: 80px;
-  min-height: 80px;
-  max-width: 100px;
-  max-height: 100px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  border: 2px rgba(47, 50, 55, 0.5) solid;
-  margin-bottom: 0.5rem;
-  background-image: url("../img/other-pokemon-3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 80%;
-}
-
-.other-pokemons-list .other-pokemon-item-3:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: rgba(47, 50, 55, 0.1);
-  border-color: #e62918;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.other-pokemons-list .other-pokemon-item-4 {
-  width: 50vw;
-  height: 50vw;
-  min-width: 80px;
-  min-height: 80px;
-  max-width: 100px;
-  max-height: 100px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  border: 2px rgba(47, 50, 55, 0.5) solid;
-  margin-bottom: 0.5rem;
-  background-image: url("../img/other-pokemon-4.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 80%;
-}
-
-.other-pokemons-list .other-pokemon-item-4:hover {
+.other-pokemons-list .other-pokemon-item:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   background-color: rgba(47, 50, 55, 0.1);
